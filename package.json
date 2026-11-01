@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "todo-list-app",
+  "workspaces": [
+    "server",
+    "shared",
+    "client"
+  ]
+}
