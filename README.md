@@ -319,3 +319,40 @@ This application is built with scalability in mind:
 5. Enable gzip compression
 6. Use CDN for client assets
 7. Implement pagination for large datasets
+
+## 🐳 Running the Project with Docker
+Follow these simple steps to set up and run the entire application (Frontend, Backend, and Database) using Docker Compose.
+
+- Prerequisites
+Ensure you have Docker and Docker Desktop installed and running on your machine.
+
+- Quick Start
+Open your terminal in the root directory of the project where the docker-compose.yml file is located.
+
+- Run the following command to build and start all containers in the background:
+
+Bash
+1. docker compose up -d --build
+Wait a few moments for Docker to build the images and spin up all services.
+
+Accessing the Application
+Once running, you can access the services at the following local endpoints:
+
+-> Frontend (Client): http://localhost:3000
+
+-> Backend (Server): http://localhost:9000
+
+-> Database (PostgreSQL): Running internally on port 5432 within the isolated Docker network.
+
+- Useful Docker Commands
+
+1. View real-time logs (to debug or check status):
+
+     Bash
+       docker compose logs -f
+
+
+2. Stop and remove all running containers:
+
+     Bash
+       docker compose down
