@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import { initDatabase } from './db';
-import todosRouter from './routes/todos';
+import { initDatabase } from './db.js';
+import todosRouter from './routes/todos.js';
 import { getGreeting } from '@todo-app/shared'
 
 dotenv.config();

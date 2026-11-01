@@ -15,8 +15,7 @@ export default function TodoApp() {
   const [filter, setFilter] = useState<'all' | 'active' | 'completed'>('all');
   const [loading, setLoading] = useState(false);
 
-  // Simulated API calls - replace with actual fetch calls to your backend
-  const API_URL = import.meta.env.VITE_API_URL|| 'http://localhost:3000/api';
+  const API_URL = import.meta.env.VITE_API_URL || '/api';
 
   useEffect(() => {
     loadTodos();

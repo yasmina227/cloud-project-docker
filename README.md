@@ -49,6 +49,20 @@ Before you begin, ensure you have the following installed:
 
 ## 🚀 Installation & Setup
 
+### Run with Docker Compose
+
+From the repository root, run:
+
+```bash
+docker compose up --build
+```
+
+Open `http://localhost:3000`. The client container serves the built UI and
+forwards `/api` requests to the server container. The API is also available
+directly at `http://localhost:9000`. PostgreSQL data is stored in the
+`db-data` volume. For non-local deployments, set `DB_USER`, `DB_PASSWORD`, and
+`DB_NAME` in the Compose environment instead of using the development defaults.
+
 ### 1. Clone the Repository
 
 ```bash
